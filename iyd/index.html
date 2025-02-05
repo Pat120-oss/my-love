@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เซอร์ไพรส์</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- เซอร์ไพรส์ -->
+        <div id="surprise-box" class="message-box">
+            <h1 class="surprise-title">เซอร์ไพรส์!</h1>
+            <button id="openSurpriseButton">เปิดเซอร์ไพรส์</button>
+        </div>
+
+        <!-- คำถาม "เธอจะเป็นแฟนกับฉันไหม?" -->
+        <div id="question-box" class="question-box" style="display: none;">
+            <p class="question-text">เธอจะเป็นแฟนกับฉันไหม?</p>
+            <button id="yesButton">เป็น</button>
+            <button id="noButton">ไม่เป็น</button>
+        </div>
+
+        <!-- ผลลัพธ์ -->
+        <div id="result" class="result-message" style="display: none;">
+            <!-- GIF ของปุ่ม "เป็น" -->
+            <img id="gif-left" src="https://media.giphy.com/media/3o6fJ1oTj6Zqz5Y7NE/giphy.gif" alt="Left GIF" class="gif" />
+            <p class="result-text">เย้! เป็นแฟนกันแล้วนะ</p>
+            <!-- GIF ของปุ่ม "ไม่เป็น" -->
+            <img id="gif-right" src="https://media.giphy.com/media/9J7tGjwiw1hnK/giphy.gif" alt="Right GIF" class="gif" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff8c00, #ff1493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for the entire content */
+.container {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Title for surprise */
+.surprise-title {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+    animation: bounceIn 1s ease-out;
+}
+
+/* Question section */
+.question-box {
+    margin-top: 50px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in 0.5s forwards;
+}
+
+.question-text {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Buttons styles */
+button {
+    font-size: 20px;
+    padding: 20px 40px;
+    margin: 20px;
+    border-radius: 25px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(255, 20, 147, 0.5);
+    transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff69b4;
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.7);
+}
+
+button:active {
+    background-color: #ff1493;
+    transform: scale(1);
+}
+
+/* Result message */
+.result-message {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 30px rgba(255, 0, 255, 0.5);
+}
+
+.result-text {
+    padding: 0 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* GIF Style */
+.gif {
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+    animation: gifAnimation 1s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes gifAnimation {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
